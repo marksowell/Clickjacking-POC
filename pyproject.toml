@@ -1,0 +1,22 @@
+[build-system]
+requires = ["setuptools", "wheel"]
+
+[project]
+name = "clickjacking-poc"
+version = "1.0.1"
+description = "A Python package for creating a clickjacking proof of concept (POC)."
+authors = [
+    {name = "Mark Sowell", email = "mark@marksowell.com"},
+]
+readme = "README.md"
+keywords = ["clickjacking", "clickjack", "clickjacking-vulnerability", "clickjacking-tester", "security", "web-security", "vulnerability", "iframe"]
+requires-python = ">=3.6"
+
+[project.urls]
+Source = "https://github.com/marksowell/clickjacking-poc"
+
+[project.scripts]
+clickjacking-poc = "clickjacking_poc.__main__:main"
+
+[project.license]
+text = "MIT"
